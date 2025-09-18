@@ -3,7 +3,7 @@
 session_start();
 // If the user is logged in, redirect to the home page
 if (isset($_SESSION['account_loggedin'])) {
-    header('Location: home.php');
+    header('Location: ./dashboard');
     exit;
 }
 ?>
@@ -36,7 +36,7 @@ if (isset($_SESSION['account_loggedin'])) {
 
                 <button class="btn blue" type="submit">Login</button>
 
-                <p class="register-link">Forgotten password? <a href="forgotpassword.php" class="form-link">Register</a></p>
+                <p class="register-link">Forgotten password? <a href="forgotpassword.php" class="form-link">Forgot your Password</a></p>
 
             </form>
 

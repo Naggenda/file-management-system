@@ -33,7 +33,7 @@ $stmt->close();
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,minimum-scale=1">
         <title>Home</title>
-        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="../style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
 

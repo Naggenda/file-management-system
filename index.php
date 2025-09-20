@@ -36,7 +36,7 @@ if (isset($_SESSION['account_loggedin'])) {
 
                 <button class="btn blue" type="submit">Login</button>
 
-                <p class="register-link">Forgotten password? <a href="forgotpassword.php" class="form-link">Forgot your Password</a></p>
+                <p class="register-link">Forgotten password? <a href="forgotpassword.php" class="form-link">Reset</a></p>
 
             </form>
 

@@ -14,8 +14,8 @@ if (!isset($_SESSION['account_loggedin'])) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <title>Home</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Dashboard</title>
+    <link href="../style.css" rel="stylesheet" type="text/css">
     <style>
         body {
             display: flex;
@@ -73,11 +73,7 @@ if (!isset($_SESSION['account_loggedin'])) {
 
         <div class="wrapper">
 
-            <h1>Website Title</h1>
-
-            <div>
-                <input type="text" name="" id=""><button>Search</button>
-            </div>
+            <h1>File Management System</h1>
 
             <nav class="menu">
                 <a href="home.php">Home</a>
@@ -86,7 +82,7 @@ if (!isset($_SESSION['account_loggedin'])) {
                     <button class="dropbtn">^</button>
                     <div class="dropdown-content">
                         <a href="profile.php">Profile</a>
-                        <a href="logout.php">
+                        <a href="../logout.php">
                             <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                                 <path
@@ -114,7 +110,9 @@ if (!isset($_SESSION['account_loggedin'])) {
 
         <div class="block">
 
-            <p>This is the home page. You are logged in!</p>
+            <?php
+               include "filemanager.php";
+            ?>
 
         </div>
 

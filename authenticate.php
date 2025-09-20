@@ -43,11 +43,12 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
             $_SESSION['account_name'] = $_POST['username'];
             $_SESSION['account_id'] = $id;
             // Output success message
-            header('Location: ../dashboard');
+            header('Location: ./dashboard');
             exit;
         } else {
             // Incorrect password
             echo 'Incorrect username and/or password!';
+            header('Location: index.php');
         }
     } else {
         // Incorrect username
